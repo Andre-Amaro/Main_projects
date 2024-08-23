@@ -13,7 +13,7 @@ import threading
 def discord_bot(name):
     bot_command = f'{name} está down!'
     #discord bot notification
-    webhook_url = 'https://discord.com/api/webhooks/1085181784934854746/hlMJQH2UzpvRigOdy9Lt1EskjLRvKPtSAplCWhcjiDh534rEzBFQUu19dW5oeAVMAMht'
+    webhook_url = 'Your API Key'
      
     data = {
         'content': f'{bot_command}'
@@ -41,8 +41,8 @@ def monitor_hosts(hosts):
 
 def monitoring():
 
-    folder_path = 'C:\\Users\\athom\\OneDrive\\Área de Trabalho\\Personal_projects _Data'
-    file_name = 'netvale_hosts.csv'
+    folder_path = 'YOUR DATA PATH'
+    file_name = 'HOSTS.csv'
     file_path = os.path.join(folder_path, file_name)
     with open(file_path,'r')as f:
         csv_reader = csv.DictReader(f) #transforming it into dictionary
