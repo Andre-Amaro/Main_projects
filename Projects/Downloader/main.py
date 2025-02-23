@@ -6,9 +6,9 @@ file = download_class.Downloader()
 
 if __name__ == "__main__":
     # Set the attributes of the object
-    file.url = "https://www.youtube.com/watch?v=1BXJewS5CT0"
+    file.url = "Youtube video URL"
     file.encoder = "mp4"
-    file.output_path = "D:\WORK\Projects\Downloader"
+    file.output_path = "file save path"
     file.res = "1080p"
     
     # Call the download method
